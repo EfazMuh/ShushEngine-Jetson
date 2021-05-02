@@ -15,21 +15,6 @@ class Motor(Board):
         if motor == 0:
             self.chip_select = s1.m0_cs
             self.enable = s1.m0_enable
-        if motor == 1:
-            self.chip_select = s1.m1_cs
-            self.enable = s1.m1_enable
-        if motor == 2:
-            self.chip_select = s1.m2_cs
-            self.enable = s1.m2_enable
-        if motor == 3:
-            self.chip_select = s1.m3_cs
-            self.enable = s1.m3_enable
-        if motor == 4:
-            self.chip_select = s1.m4_cs
-            self.enable = s1.m4_enable
-        if motor == 5:
-            self.chip_select = s1.m5_cs
-            self.enable = s1.m5_enable
 
         # Initially apply default settings.
         # These can be configured at any time.
