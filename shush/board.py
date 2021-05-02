@@ -3,7 +3,7 @@ __author__ = 'ZJAllen'
 import shush.boards.shush_mk1 as s1
 
 import spidev as spidev
-import RPi.GPIO as gpio
+import Jetson.GPIO as gpio
 
 gpio.setwarnings(False)
 
