@@ -23,27 +23,12 @@ class Board:
 
         # Define chip select pins
         gpio.setup(s1.m0_cs, gpio.OUT)
-        gpio.setup(s1.m1_cs, gpio.OUT)
-        gpio.setup(s1.m2_cs, gpio.OUT)
-        gpio.setup(s1.m3_cs, gpio.OUT)
-        gpio.setup(s1.m4_cs, gpio.OUT)
-        gpio.setup(s1.m5_cs, gpio.OUT)
 
         # Define enable pins
         gpio.setup(s1.m0_enable, gpio.OUT)
-        gpio.setup(s1.m1_enable, gpio.OUT)
-        gpio.setup(s1.m2_enable, gpio.OUT)
-        gpio.setup(s1.m3_enable, gpio.OUT)
-        gpio.setup(s1.m4_enable, gpio.OUT)
-        gpio.setup(s1.m5_enable, gpio.OUT)
 
         # Pull all cs pins HIGH (LOW initializes data transmission)
         gpio.output(s1.m0_cs, gpio.HIGH)
-        gpio.output(s1.m1_cs, gpio.HIGH)
-        gpio.output(s1.m2_cs, gpio.HIGH)
-        gpio.output(s1.m3_cs, gpio.HIGH)
-        gpio.output(s1.m4_cs, gpio.HIGH)
-        gpio.output(s1.m5_cs, gpio.HIGH)
 
     def init_spi(self):
         # Initialize SPI Bus for motor drivers.
